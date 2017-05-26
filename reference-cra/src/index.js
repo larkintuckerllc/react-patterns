@@ -1,5 +1,5 @@
 (function () {
-  'use strict';
+  'use strict'
   var counterEl = document.getElementById('counter');
   var incrementEl = document.getElementById('increment');
   incrementEl.addEventListener('click', function() {
