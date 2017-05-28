@@ -1,7 +1,7 @@
 var generateName = require('sillyname');
 var hello = require('./hello');
-require('./index.css'); // ADDED FOR CSS
-var icon = require('./icon.png'); // ADDED FOR IMAGE
+require('./index.css');
+var icon = require('./icon.png'); // ADDED FOR IMAGES
 
 var name = generateName();
 var counterEl = document.getElementById('counter');
@@ -12,4 +12,4 @@ incrementEl.addEventListener('click', function() {
 });
 hello();
 window.console.log(name);
-iconEl.src = icon; // ADDED FOR IMAGE
+iconEl.src = icon; // ADDED FOR IMAGES
