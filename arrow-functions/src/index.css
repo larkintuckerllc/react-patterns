@@ -1,0 +1,10 @@
+#counter {
+  color: red;
+}
+#background {
+   height: 300px;
+   background-image: url(background.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
