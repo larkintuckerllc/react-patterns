@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Counter from './Counter';
 
 class App extends Component {
   constructor(props) {
@@ -10,15 +11,11 @@ class App extends Component {
   render() {
     const { counter } = this.state;
     return (
-      <div>
-        <div>{counter}</div>
-        <div>{counter === 0 ? 'zero' : counter.toString()}</div>
-        <button
-          onClick={() => this.setState({ counter: counter + 1 })}
-        >+</button>
-      </div>
+      <Counter
+        increment={() => this.setState({ counter: counter + 1 })}
+        value={counter === 0 ? 'zero' : counter.toString()}
+      />
     );
   }
 }
-
 export default App;
