@@ -6,7 +6,7 @@ var icon = require('./icon.png'); // ADDED FOR IMAGES
 var name = generateName();
 var counterEl = document.getElementById('counter');
 var incrementEl = document.getElementById('increment');
-var iconEl = document.getElementById('icon');
+var iconEl = document.getElementById('icon'); // ADDED FOR IMAGES
 incrementEl.addEventListener('click', function() {
   counterEl.innerHTML = (parseInt(counterEl.innerHTML, 10) + 1).toString();
 });
